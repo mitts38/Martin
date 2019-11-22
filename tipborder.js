@@ -5,13 +5,13 @@ const boderColorChange = () => {
         tip.addEventListener(
             "mouseover", 
             (theMouseOverEvent) => {
-                tip.tiplist.add("tiphighlightfish")
+                tip.classList.add("tiphighlightfish")
             }
         )
 
 
         tip.addEventListener("mouseout", theMouseOutEvent => {
-            tip.classList.remove("highlightFish")
+            tip.classList.remove("tiphighlightfish")
         })
     }
 }
