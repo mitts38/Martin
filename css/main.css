@@ -12,18 +12,18 @@ body {
   flex-wrap: wrap;
 }
 
-img {
+.fish__image {
   max-width: 100%;
 }
 
-.fishies {
+.fishList {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 68%;
   justify-content: space-evenly;
 }
 
-.fishies__card {
+.fish {
   flex-basis: 28%;
   width: 28%;
   border: 2px dotted gray;
@@ -55,4 +55,7 @@ aside{
   flex-basis: 35;
   border: 1px dotted purple;
   padding: 05px;
+}
+.tipcolor{
+  background-color: coral;
 }

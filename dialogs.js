@@ -2,7 +2,7 @@
 const initializeDetailButtonEvents = () => {
     // CAN'T TOUCH THIS - START
     const allCloseButtons = document.querySelectorAll(".button--close")
-
+    const allDetailButtons = document.querySelectorAll("button[id^='button--']")
     for (const btn of allCloseButtons) {
         btn.addEventListener(
             "click",
@@ -18,58 +18,20 @@ const initializeDetailButtonEvents = () => {
     // You will be writing code below this line
 
     // Show Bart's details when the button is clicked
-    document.querySelector("#button--bitey").addEventListener(
+  
+
+
+  // Add an event listener to each one
+  for (const btn of allDetailButtons) {
+    btn.addEventListener(
         "click",
-        theClickEvent => {
-            const theDialog = document.querySelector("#details--bitey")
+        theEvent => {
+            const dialogSiblingSelector = `#${theEvent.target.id}+dialog`
+            const theDialog = document.querySelector(dialogSiblingSelector)
             theDialog.showModal()
         }
     )
-
-
-document.querySelector("#button--Jawsie").addEventListener(
-    "click",
-    theClickEvent => {
-        const theDialog = document.querySelector("#details--Jawsie")
-        theDialog.showModal()
-    }
-)
-
-document.querySelector("#button--MrDangles").addEventListener(
-    "click",
-    theClickEvent => {
-        const theDialog = document.querySelector("#details--MrDangles")
-        theDialog.showModal()
-    }
-)
-
-document.querySelector("#button--MrBubbles").addEventListener(
-    "click",
-    theClickEvent => {
-        const theDialog = document.querySelector("#details--MrBubbles")
-        theDialog.showModal()
-    }
-)
-
-document.querySelector("#button--Barry").addEventListener(
-    "click",
-    theClickEvent => {
-        const theDialog = document.querySelector("#details--Barry")
-        theDialog.showModal()
-    }
-)
-
-
-document.querySelector("#button--Snappy").addEventListener(
-    "click",
-    theClickEvent => {
-        const theDialog = document.querySelector("#details--Snappy")
-        theDialog.showModal()
-    }
-)
-
 }
-
-
+}
 export default initializeDetailButtonEvents
 

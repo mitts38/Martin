@@ -13,30 +13,45 @@ const fishCollection = [
         species: "Betta Fish",
         species: "Betta Fish",
         species: "Betta Fish",
-        image: "fish.jpg"
+        image: "photo/yellow-fish.jpg"
     },
     {
-        name: "Bart",
+        name: "goldy",
         food: ["algae", "crustaceans"],
-        location: "Hawai",
+        location: "saltwater",
         length: 2,
         species: "Betta Fish",
-        image: "fish.jpg"
+        image: "photo/orange-fish.jpg"
     },
     {
-        name: "Bart",
+        name: "sam",
         food: ["algae", "crustaceans"],
         location: "warm water",
         length: 200,
         species: "Betta Fish",
-        image: "fish.jpg"
+        image: "photo/white-fish.jpg"
     },
     {
         name: "Tina",
         food: ["algae", "crustaceans"],
         location: "sea",
         length: 100,
-        image: "fish.jpg"
+        image: "photo/Dolphine-fish.jpg"
+    },
+   
+    {
+        name: "baggy",
+        food: ["algae", "crustaceans"],
+        location: "pond",
+        length: 30,
+        image: "photo/Red-orange-fish.jpg"
+    },
+    {
+        name: "browny",
+        food: ["algae", "crustaceans"],
+        location: "mountain lake",
+        length: 150,
+        image: "photo/Ray-fish.jpg"
     },
 
 ]
