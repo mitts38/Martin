@@ -1,24 +1,24 @@
 
 
 import Locationscomponent from "./Location.js"
-import { useLocations} from "./LocationDataProvider.js"
+import { uselocations} from "./LocationDataProvider.js"
 const LocationListComponent = () => {
-
+    const locations = uselocations()
     // Get a reference to the `<article class="content">` element
     const contentElement = document.querySelector(".locations")
-    const locations = useLocations()
+    
 
     let locationHTMLRepresentations = ""
 
     for (const singlelocation of locations) {
-        const locationHTML = LocationsComponent(Location)
-        locationHTMLRepresentations += locationComponenet(location)
+        const locationHTML = Locationscomponent(singlelocation)
+        locationHTMLRepresentations += locationHTML
     }
     // Add to the existing HTML in the content element
     contentElement.innerHTML += `
         <section class="LocationList">
         
-            ${allHTML}
+            ${locationHTMLRepresentations}
         </section>
     `
 }

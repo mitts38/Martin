@@ -2,6 +2,6 @@
  *  Import the initializeDetailButtonEvents function
  *  reference and then invoke it
  */
-import Anotherlocation from './javascript.js'
+import LocationListComponent from './locations/LocationList.js'
 
-Anotherlocation()
+LocationListComponent()
