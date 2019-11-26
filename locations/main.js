@@ -1,4 +1,5 @@
-import LocationListComponent from './Locations/LocationList.js'
-
+import LocationListComponent from './LocationList.js'
+import initializeDetailButtonEvents from './dialogsbox.js'
 
 LocationListComponent()
+initializeDetailButtonEvents()

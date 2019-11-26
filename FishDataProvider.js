@@ -11,9 +11,7 @@ const fishCollection = [
         location: "Hawai",
         length: 2,
         species: "Betta Fish",
-        species: "Betta Fish",
-        species: "Betta Fish",
-        image: "photo/yellow-fish.jpg"
+        image: "photo/yellow-fish.jpg",
     },
     {
         name: "goldy",
